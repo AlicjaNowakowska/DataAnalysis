@@ -19,4 +19,4 @@ t = linspace(0,11,60);
  hold on
  xlabel('czas w latach');
  ylabel('liczebnosc populacji*10^6');
- legend('populacja za pomocπ modelu','rzeczywsite dane','Location','southwest')
+ legend('populacja za pomoc≈° modelu','rzeczywsite dane','Location','southwest')
