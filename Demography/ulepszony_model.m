@@ -20,7 +20,7 @@ function prey2
  grid on;
  
  xlabel('czas w latach');
- ylabel('liczebnoœæ populacji *10^7');
+ ylabel('liczebnoÅ›Ä‡ populacji *10^7');
   
  plot(0:10,populacja_pl,'r-o')
  hold on
@@ -30,21 +30,21 @@ function prey2
  
  %plot([0:10],populacja_pl,'-*')
  %plot([0:10],populacja_uk,'-o')
- legend('populacja Polski za pomoc¹ modelu','populacja UK za pomoc¹ modelu','rzeczywsite dane PL','rzeczywiste dane UK','Location','southeast')
+ legend('populacja Polski za pomocÄ… modelu','populacja UK za pomocÄ… modelu','rzeczywsite dane PL','rzeczywiste dane UK','Location','southeast')
  end
  %Predator-prey function
  function dxdt = f2(t,x)
  dxdt = [0;0];
  %p =1; q =1.0876524 ; r =1.04 ; s = 1;%wspolczynnik nardozin kobiet /smiertelnoci wspolczynnik narodizn mezczyzn/zgonow
 %p =1; q =1.0876524 ; r =1 ; s = 1
- %a=0.35; b=0.1; c=0.7; d=0.6;   %rodzi sie 350 000 dzieci,migruje 100 000 pl, rodiz siê 700 000 dzieci umiera 600 000 ludzi
+ %a=0.35; b=0.1; c=0.7; d=0.6;   %rodzi sie 350 000 dzieci,migruje 100 000 pl, rodiz siÄ™ 700 000 dzieci umiera 600 000 ludzi
  % a=0.035; b=0.01; c=0.07; d=0.06 e= f=;
  rx=0.035; kx=5.5 ; ry=0.07; ky=7.5 ; alpha=0.01; beta=0;
  a=rx ;b=rx/kx; c=alpha*rx/kx; d=ry; e=ry/ky; f=beta*ry/ky;
  dxdt(1) = a*x(1)-b*x(1)*x(1)+c*x(1)*x(2);%opisujemy nasz uklad rownan rozncizkowych
  dxdt(2) = d*x(2)-e*x(2)*x(2)+f*x(2)*x(1);
  end
- %p³ci mêskiej	7,38 œmiertelnych/1000 ¿ywych
-%p³ci ¿eñskiej	5,9 œmiertelnych/1000 ¿ywych
+ %pÅ‚ci mÄ™skiej	7,38 Å›miertelnych/1000 Å¼ywych
+%pÅ‚ci Å¼eÅ„skiej	5,9 Å›miertelnych/1000 Å¼ywych
 %104 dziewczynki na 100 chlopcow
 %umiera 202150 mezczyzn 185859 kobiet 
