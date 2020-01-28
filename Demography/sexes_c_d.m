@@ -6,7 +6,7 @@ urodzenia=urodzenia/2
 %u(x,0)
 funkcja_u_wiek=[1794481 2045472 2537284 2980474 3306759 3062053 2664952 2366347 2585935 3093469 2942361 2264454 1511521 1561704 1412374 1078008];
 %u(x,0)
-%poszczególny wiek z odstêpstwem piêciu lat. praw œmierci
+%poszczegÃ³lny wiek z odstÄ™pstwem piÄ™ciu lat. praw Å›mierci
 pi_x =1-pi_x;
 %policzenie f(t)
 wsp_dzietnosci=1.35/80; %t=2004
@@ -17,7 +17,7 @@ r_2=r_n(beta, pi_x,2)
 %k_1=r_1/r_0
 %k_2=k_1-(r_2)^2/(r_0^2)
 delta=r_1^2-2*r_2*(r_0-1)
-lambda_1=(r_1-sqrt(delta))/(2*r_2)%uzyska³yœmy rozwi¹zanie urojone tka tyci tyci urojonego
+lambda_1=(r_1-sqrt(delta))/(2*r_2)%uzyskaÅ‚yÅ›my rozwiÄ…zanie urojone tka tyci tyci urojonego
 lambda_2=(r_1+sqrt(delta))/(2*r_2)
 t=0:12; %20 lat
 A=urodzenia(1)
