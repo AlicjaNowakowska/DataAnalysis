@@ -30,9 +30,9 @@ soln3 = ode45(@f7,[0 10],y0)
 % hold on
  %plot(0:11,s_mezczyzni,'r-o')
 
- %legend('samotni mezczyzni za pomoc¹ modelu','rzeczywsite dane','Location','northwest')
+ %legend('samotni mezczyzni za pomocÄ… modelu','rzeczywsite dane','Location','northwest')
  %xlabel('czas w latach');
- %ylabel('liczebnoœæ populacji*10^6');
+ %ylabel('liczebnoÅ›Ä‡ populacji*10^6');
  %hold on
  %plot(t,y(:,2),'g')
  hold on
@@ -50,7 +50,7 @@ soln3 = ode45(@f7,[0 10],y0)
  %hold on
  xlabel('czas w latach');
  ylabel('liczebnosc populacji samotnych mezczyzn*10^6')
- %,'samotni mezczyzni za pomoc¹ modelu' 'samotni mezczyzni-rzeczywiste dane',
+ %,'samotni mezczyzni za pomocÄ… modelu' 'samotni mezczyzni-rzeczywiste dane',
  legend('M(s_f,f_m)=2*s_f*f_m/(s_f+f_m)','M(s_f,f_m)=sqrt(s_f,f_m)','M(s_f,f_m)=min(s_f,f_m)','rzeczywiste dane','Location','northwest')
 end
 function dxdt = f2(t,x)
